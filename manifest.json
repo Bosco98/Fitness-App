@@ -1,0 +1,15 @@
+{
+  "name": "Fitness app ",
+  "short_name": "Fitness App",
+  "start_url": "index.html",
+  "display": "standalone",
+  "theme_color": "Green",
+  "background_color": "#111111",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "iconss/png"
+    }
+  ]
+}

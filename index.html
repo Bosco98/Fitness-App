@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="manifest" href="manifest.json" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
+    <title>App</title>
+</head>
+<body bgcolor= #e8f5e9 id="bd" item-width=device-width> 
+  <nav>
+    <div class="nav-wrapper green darken-4">
+      <a href="#!" class="brand-logo">  Fitness App</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">dehaze    </i></a>
+      <ul class="right hide-on-med-and-down">
+            <li><a href="arms.html">Upper body with wieghts</a></li>
+            <li><a href="abs.html">Abs </a></li>
+            <li><a href="index.html">Complete Workout</a></li>    
+    </ul>
+    </div>
+  </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Complete Workout</a></li>
+        <li><a href="arms.html">Upper body </a></li>
+        <li><a href="abs.html">Abs </a></li>
+     </ul>
+     
+
+        <div class="container">    
+        <h5>Complete Body Workout</h5>
+        <h1 id="timerLabel">00:00:00</h1>
+
+
+    <input type="button"  class="waves-effect waves-light btn  green" onclick="start()" value="START" id="startBtn">
+    <input type="button"  class="waves-effect waves-light btn  green" onclick="stop()" value="PAUSE">
+    <input type="button"  class="waves-effect waves-light btn  green" value="Restart" onClick="window.location.reload()">
+      <img src="comp_work/jumping_jack.jpg" class="responsive-img" height="auto" max-width="100%" id="imgsvg" >
+    <p class="flow-text" id="parc">Jumping jacks</p>
+</div>
+    <script src="indexcom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+           document.addEventListener('DOMContentLoaded', function() {
+           var elems = document.querySelectorAll('.sidenav');
+           var instances = M.Sidenav.init(elems);
+           });
+       
+    </script>
+   
+</body>
+</html>
